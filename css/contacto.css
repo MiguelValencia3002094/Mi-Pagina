@@ -1,0 +1,118 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f9f7f0; /* Un beige suave como fondo */
+    color: #333;
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 960px;
+    margin: 30px auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #a8dadc; 
+    color: #1d3557;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0; 
+}
+
+.header__titulo {
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+.contacto-redes {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contacto-redes h2 {
+    font-size: 1.8em;
+    color: #a8dadc; 
+    margin-bottom: 30px;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.red-social {
+    display: flex;
+    align-items: center;
+    background-color: #f8f0e3; /* Un beige más oscuro para los enlaces */
+    color: #333;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.red-social:hover {
+    background-color: #e9d7be; /* Un tono aún más claro al pasar el ratón */
+}
+
+.red-social img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    fill: #a8dadc; 
+}
+
+
+.red-social img svg path {
+    fill: #a8dadc;
+}
+
+.red-social span {
+    font-size: 1em;
+}
+
+
+.menu {
+    background-color: #f1faee; 
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.menu__navegacion a {
+    display: inline-block;
+    color: #1d3557;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu__navegacion a:hover {
+    background-color: #457b9d;
+    color: #f1faee;
+}
+
+/* Responsive para la página de contacto */
+@media (min-width: 768px) {
+    .redes-sociales {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .red-social {
+        width: auto;
+    }
+}

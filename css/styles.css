@@ -1,0 +1,191 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f8f9; /* Un gris muy claro */
+    color: #333; /* Gris oscuro para el texto principal */
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #a8dadc; /* Un azul verdoso suave */
+    color: #1d3557; /* Azul oscuro para el título */
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+.header__titulo {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.header__subtitulo {
+    font-size: 1em;
+    color: #457b9d; /* Otro tono de azul para el subtítulo */
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: #f1faee; /* Un beige muy claro */
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.menu__navegacion a {
+    display: inline-block;
+    color: #1d3557;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu__navegacion a:hover {
+    background-color: #457b9d;
+    color: #f1faee;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('/img/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1faee; /* Cambia el color del texto para que contraste */
+    padding: 80px 20px;
+    text-align: center;
+    /* Opcional: Fondo semitransparente */
+    /* background-color: rgba(0, 0, 0, 0.5);
+    /* background-blend-mode: overlay; */
+}
+
+.hero__contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero__contenido h2 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(97, 96, 96, 0.5); /* Sombra para el texto */
+}
+
+.hero__contenido_direccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hero__contenido_direccion svg {
+    margin-right: 10px;
+    fill: black;
+}
+
+.hero__contenido_direccion p {
+    color: black;
+}
+
+.hero__contenido_boton a { /* Estilos para el enlace dentro del botón */
+    background-color: #1d3557;
+    color: #a8dadc;
+    border: none;
+    padding: 10px 20px; /* Reducimos el padding */
+    border-radius: 6px; /* Reducimos el radio del borde */
+    font-size: 0.9em; /* Reducimos el tamaño de la fuente */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero__contenido_boton a:hover {
+    background-color: #457b9d;
+    color: #f1faee;
+}
+
+
+.seccion {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.seccion__titulo {
+    font-size: 1.8em;
+    color: #1d3557;
+    margin-bottom: 30px;
+}
+
+.seccion__contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.seccion__diseño,
+.seccion__aplicaciones_Web,
+.seccion__ecomerce {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.seccion__imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.seccion__imagenes svg {
+    fill: #a8dadc;
+    width: 50px;
+    height: 50px;
+}
+
+.seccion__diseño_titulo,
+.seccion__aplicacionesWeb_titulo,
+.seccion__ecomerce_titulo {
+    color: #457b9d;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.seccion__contenido p {
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .menu__navegacion a {
+        margin: 5px;
+        padding: 8px 15px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero__contenido h2 {
+        font-size: 1.8em;
+    }
+
+    .seccion__contenido {
+        grid-template-columns: 1fr;
+    }
+}

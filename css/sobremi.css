@@ -1,0 +1,264 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f8f9; /* Un gris muy claro */
+    color: #333; /* Gris oscuro para el texto principal */
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #a8dadc; /* Un azul verdoso suave */
+    color: #1d3557; /* Azul oscuro para el título */
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+.header__titulo {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.header__subtitulo {
+    font-size: 1em;
+    color: #457b9d; /* Otro tono de azul para el subtítulo */
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: #f1faee; /* Un beige muy claro */
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.menu__navegacion a {
+    display: inline-block;
+    color: #1d3557;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu__navegacion a:hover {
+    background-color: #457b9d;
+    color: #f1faee;
+}
+
+/* Hero section */
+.hero {
+    background-color: #e0fbfc; /* Un celeste suave */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero__contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero__contenido h2 {
+    font-size: 2em;
+    color: #1d3557;
+    margin-bottom: 20px;
+}
+
+.hero__contenido_direccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hero__contenido_direccion svg {
+    margin-right: 10px;
+    fill: #457b9d;
+}
+
+.hero__contenido_direccion p {
+    color: #333;
+}
+
+.hero__contenido_boton a { /* Estilos para el enlace dentro del botón */
+    background-color: #457b9d;
+    color: #f1faee;
+    border: none;
+    padding: 10px 20px; /* Reducimos el padding */
+    border-radius: 6px; /* Reducimos el radio del borde */
+    font-size: 0.9em; /* Reducimos el tamaño de la fuente */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero__contenido_boton a:hover {
+    background-color: #1d3557;
+}
+
+/* Sección de servicios */
+.seccion {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.seccion__titulo {
+    font-size: 1.8em;
+    color: #1d3557;
+    margin-bottom: 30px;
+}
+
+.seccion__contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.seccion__diseño,
+.seccion__aplicaciones_Web,
+.seccion__ecomerce {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.seccion__imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.seccion__imagenes svg {
+    fill: #a8dadc; /* Color suave para los iconos */
+    width: 50px;
+    height: 50px;
+}
+
+.seccion__diseño_titulo,
+.seccion__aplicacionesWeb_titulo,
+.seccion__ecomerce_titulo {
+    color: #457b9d;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.seccion__contenido p {
+    color: #555;
+}
+
+/* Estilos para la página Sobre mí */
+.sobre-mi {
+    padding: 40px 20px;
+}
+
+.sobre-mi h2 {
+    font-size: 2em;
+    color: #1d3557; /* Azul oscuro */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobre-mi p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #555; /* Gris más claro para el texto */
+}
+
+.sobre-mi h3 {
+    font-size: 1.5em;
+    color: #457b9d; /* Otro tono de azul */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.descarga-archivo {
+    background-color: #f9f9f9; /* Gris muy claro de fondo */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.descarga-archivo p {
+    margin-bottom: 10px;
+}
+
+.boton-descarga {
+    display: inline-block;
+    background-color: #457b9d; /* Azul del botón de contacto */
+    color: #f1faee; /* Beige claro para el texto */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-descarga:hover {
+    background-color: #1d3557; /* Azul oscuro al pasar el ratón */
+}
+
+.nota-descarga {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Responsive design (opcional, pero recomendado) */
+@media (max-width: 768px) {
+    .menu__navegacion a {
+        margin: 5px;
+        padding: 8px 15px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero__contenido h2 {
+        font-size: 1.8em;
+    }
+
+    .seccion__contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-mi {
+        padding: 30px 15px;
+    }
+
+    .sobre-mi h2 {
+        font-size: 1.8em;
+    }
+
+    .sobre-mi h3 {
+        font-size: 1.3em;
+    }
+
+    .descarga-archivo {
+        padding: 15px;
+    }
+
+    .boton-descarga {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
